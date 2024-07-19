@@ -1,5 +1,4 @@
-# comp_grafica_ufrj
-Esse repositório  desenvolvidos para a disciplina EEL882 - Computação Gráfica
+# comp_grafica_ufrj - Ray Tracing
 
 Este projeto implementa um ray tracer básico utilizado como trabalho para a disciplina EEL882 - Computação Gráfica do curso de Engenharia de Computação e Informação da Universidade Federal do Rio de Janeiro (UFRJ). Esse projeto faz uso da linguagem Python juntamente com bibliotecas populares como NumPy e Matplotlib. Siga as instruções abaixo para configurar o ambiente, instalar as dependências necessárias e executar o código em um notebook Jupyter.
 
