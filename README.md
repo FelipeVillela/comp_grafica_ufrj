@@ -13,8 +13,8 @@ Este projeto implementa um ray tracer básico utilizado como trabalho para a dis
 
    Se você ainda não clonou o repositório, faça isso agora:
    ```sh
-   git clone https://github.com/seu_usuario/seu_repositorio.git
-   cd seu_repositorio
+   git clone https://github.com/FelipeVillela/comp_grafica_ufrj.git
+   cd comp_grafica_ufrj
    ```
 
 2. **Crie um Ambiente Virtual**
