@@ -82,9 +82,13 @@ Ray tracing é uma técnica de renderização utilizada para gerar imagens tridi
    jupyter notebook
    ```
 
+   O Jupyter será executado no navegador, que automaticamente irá abrir.
+   
+   Mais informações podem ser encontradas na [página inicial do Jupyter](https://jupyter.org/).
+
 6. **Abra o Notebook**
 
-   No navegador, abra o notebook contendo o código do ray tracer. Navegue até o diretório onde o notebook está salvo e clique no arquivo para abri-lo.
+   Com o jupyter aberto no navegador, vá até o diretório onde o projeto foi clonado no arquivo `main.ipynb` para abrir o notebook.
 
 7. **Execute o Código**
 
@@ -115,4 +119,4 @@ deactivate
 
 ---
 
-Seguindo essas instruções, você deve conseguir configurar o ambiente e executar o código do ray tracer com sucesso. Se encontrar algum problema ou tiver dúvidas, sinta-se à vontade para abrir uma issue no repositório ou contatar o mantenedor do projeto.
+Seguindo essas instruções, você deve conseguir configurar o ambiente e executar o código do ray tracing com sucesso. 
