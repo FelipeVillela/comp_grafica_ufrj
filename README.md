@@ -2,12 +2,45 @@
 
 Este projeto implementa um ray tracer básico utilizado como trabalho para a disciplina EEL882 - Computação Gráfica do curso de Engenharia de Computação e Informação da Universidade Federal do Rio de Janeiro (UFRJ). Esse projeto faz uso da linguagem Python juntamente com bibliotecas populares como NumPy e Matplotlib. Siga as instruções abaixo para configurar o ambiente, instalar as dependências necessárias e executar o código em um notebook Jupyter.
 
-#### Pré-requisitos
+Claro! Aqui está uma breve explicação sobre como o ray tracing funciona:
+
+## O Que é Ray Tracing?
+
+Ray tracing é uma técnica de renderização utilizada para gerar imagens tridimensionais realistas. Ele simula o comportamento físico da luz para calcular como os raios de luz interagem com os objetos em uma cena. Essa técnica é amplamente utilizada em gráficos de computador para criar imagens com efeitos de iluminação realistas, sombras e reflexões.
+
+### Como o Ray Tracing Funciona?
+
+1. **Lançamento de Raios**:
+   - A partir da câmera (ponto de vista do observador), raios são lançados em direção a cada pixel na tela.
+   - Cada raio segue uma linha reta até encontrar um objeto na cena.
+
+2. **Interseção com Objetos**:
+   - Para cada raio lançado, calcula-se se e onde ele intersecta os objetos na cena (esferas, planos, etc.).
+   - Isso envolve resolver equações matemáticas que descrevem as superfícies dos objetos.
+
+3. **Cálculo de Cor**:
+   - Quando um raio intersecta um objeto, calcula-se a cor do ponto de interseção.
+   - A cor é determinada pela combinação de várias componentes de iluminação:
+     - **Luz ambiente**: Iluminação geral da cena.
+     - **Luz difusa**: Luz direta que atinge o objeto.
+     - **Luz especular**: Reflexões brilhantes na superfície do objeto.
+     - **Reflexões e Refrações**: Raios secundários que refletem ou refratam no ponto de interseção, contribuindo para a cor final.
+
+4. **Sombras e Reflexões**:
+   - Para cada ponto de interseção, calcula-se se ele está na sombra, lançando um novo raio em direção à fonte de luz.
+   - Reflexões são calculadas lançando novos raios na direção refletida e repetindo o processo de interseção.
+
+5. **Recursão**:
+   - O processo de lançar raios pode ser recursivo para simular múltiplas reflexões e refrações.
+   - A profundidade máxima de recursão é geralmente limitada para evitar cálculos excessivos.
+
+## Como executar o programa
+### Pré-requisitos
 
 - Python 3.7 ou superior
 - `pip` (gerenciador de pacotes Python)
 
-#### Passos para Configuração
+### Passos para Configuração
 
 1. **Clone o Repositório**
 
@@ -57,7 +90,7 @@ Este projeto implementa um ray tracer básico utilizado como trabalho para a dis
 
    No notebook Jupyter, execute as células uma a uma para entender o funcionamento e gerar a imagem renderizada.
 
-#### Estrutura do Código
+### Estrutura do Código
 
 - **Célula 1**: Importação das bibliotecas necessárias.
 - **Célula 2**: Definição de funções auxiliares para normalização de vetores, cálculo de reflexão e interseção de raios com esferas.
@@ -65,7 +98,7 @@ Este projeto implementa um ray tracer básico utilizado como trabalho para a dis
 - **Célula 4**: Função principal `render_scene` que realiza a renderização da cena.
 - **Célula 5**: Salvamento da imagem renderizada em um arquivo PNG.
 
-#### Salvando a Imagem
+### Salvando a Imagem
 
 A última célula do notebook salva a imagem renderizada em um arquivo PNG chamado `ray_traced_image.png`.
 
